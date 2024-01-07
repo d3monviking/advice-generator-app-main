@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Manrope', sans-serif;
+    box-sizing: border-box;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+body {
+    background-color: hsl(218, 23%, 16%);
+}
+
+.container {
+    background-color: hsl(217, 19%, 24%);
+    width: 475px;
+    height: 325px;
+    margin: 200px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    position: relative;
+}
+
+.title {
+    color: hsl(150, 100%, 66%);
+    font-size: 12px;
+    padding-top: 40px;
+    letter-spacing: 0.4em;
+    padding-bottom: 30px;
+}
+
+.quote {
+    color: hsl(193, 38%, 86%);
+    padding: 10px 35px;
+    text-align: center;
+    font-size: 25px;
+}
+
+.divider {
+    padding-top: 30px; 
+    padding-left: 35px;
+    padding-right: 35px;
+}
+
+.divider>img {
+    width: 405px;
+}
+
+.icon {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background-color: hsl(150, 100%, 66%);
+    position: absolute;
+    z-index: 1;
+    margin-top: 295px;
+}
+
+.icon:active {
+    -webkit-box-shadow: 2px 2px 15px 9px rgba(82,255,168,0.6); 
+    box-shadow: 2px 2px 15px 9px rgba(82,255,168,0.6);
+}
+
+.dice {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    padding-top: 14px
+
+}
+
+@media screen and (max-width: 420px) {
+    .container{
+        width: 80%;
+        height: 375px;
+    }
+
+    .divider>img {
+        width: 100%;
+        padding-left: 24px;
+        padding-right: 24px;
+        padding-bottom: 10px;
+    }
+
+    .icon {
+        margin-top: 345px;
+    }
+    
+}
